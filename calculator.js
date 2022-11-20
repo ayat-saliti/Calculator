@@ -1,3 +1,7 @@
+getNumber();
+result();
+clear();
+
 
 
 function getNumber(val){
@@ -16,8 +20,4 @@ function result(){
 function clear(){
   document.getElementsByClassName('equal').value='';
 }
-
-getNumber();
-result();
-clear();
 
