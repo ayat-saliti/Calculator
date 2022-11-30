@@ -31,18 +31,20 @@ body{
     height: 50px;
     background-image: linear-gradient(to bottom, whitesmoke , pink);
     cursor: pointer;
-    border-radius: 10pc;
+    border-radius: 50%;
 }
-/* 
-.main-container *:hover{
+
+.calculator *:hover{
     color: purple;
     background-image:linear-gradient( white , lightgoldenrodyellow , white )
-} */
+} 
 
 .result{
     border: 2px solid purple ;
     grid-column: 1/4;
     cursor: text;
+    border-radius: 20%;
+    padding: 0.5rem;
     background-image:linear-gradient( white , lightgoldenrodyellow , white )
 }
 

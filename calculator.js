@@ -1,23 +1,35 @@
-getNumber();
-result();
-clear();
 
-
+let shownResult = document.querySelector('.result');
 
 function getNumber(val){
-let shownResult = document.getElementsByClassName('equal');
-shownResult.value += val;
-return val;
+  shownResult.innerText = shownResult.innerText + val;
 }
 
 function result(){
-  let x = document.getElementsByClassName('equal').value;
+  let x = shownResult.innerText;
   let y = eval(x);
-  document.getElementsByClassName('equal').value = y;
-  return y;
+  shownResult.innerText = y;
 }
 
-function clear(){
-  document.getElementsByClassName('equal').value='';
+
+function clearInput(){
+  shownResult.innerText = '';
+}
+
+function getOperation(val){
+  let lastResult = shownResult.innerText.slice(-1);
+  if(lastResult === "+"){
+    return;
+  } else  if(lastResult === "-"){
+    return;
+  } else  if(lastResult === "*"){
+    return;
+  } else  if(lastResult === "/"){
+    return;
+  } else  if(lastResult === "."){
+    return;
+  } else{
+    shownResult.innerText = shownResult.innerText + val;
+  }
 }
 
